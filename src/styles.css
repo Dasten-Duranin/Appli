@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+.card-dashboard{
+	width:70%; 
+	margin-top:3%; 
+	margin-left:15%
+}
+
+
+table, td, th {    
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 15px;
+}
+
+th{
+	background-color: #e5e5e5;
+}

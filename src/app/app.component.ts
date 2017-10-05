@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { OnInit } from '@angular/core';
 import { Http } from '@angular/http';
+
+
+
 import 'rxjs/add/operator/toPromise';
 
 
@@ -9,8 +12,10 @@ import 'rxjs/add/operator/toPromise';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent implements OnInit {
-	title = 'app';
+
+	title = 'BikeNantes';
 
 	weather   = null;
 	pollition = null;
@@ -57,6 +62,8 @@ export class AppComponent implements OnInit {
 		this.getWeather().then(rep => {this.weather = rep; console.log(this.weather)});
 		this.getPollution().then(rep => {this.pollition = rep; console.log(this.pollition)});
 		this.getWarning().then(rep => {this.warning = rep; console.log(this.warning)});
-		this.getTheft().then(rep => {this.theft = rep; console.log(this.theft)});
+		this.getTheft().then(rep => {this.theft = rep;console.log(this.theft)});
 	}
 }
+
+
