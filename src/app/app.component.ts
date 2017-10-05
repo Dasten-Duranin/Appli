@@ -27,28 +27,28 @@ export class AppComponent implements OnInit {
 	}
 
 	getWeather(): any {
-		return this.http.get('http://192.168.43.89:8000/weather/')
+		return this.http.get('http://localhost:8000/weather/')
 			.toPromise()
 			.then(response => response.json())
 			.catch(this.handleError);
 	}
 
 	getPollution(): any {
-		return this.http.get('http://192.168.43.89:8001/pollution/')
+		return this.http.get('http://localhost:8001/pollution/')
 			.toPromise()
 			.then(response => response.json())
 			.catch(this.handleError);
 	}
 
 	getWarning(): any {
-		return this.http.get('http://192.168.43.89:8002/alert/')
+		return this.http.get('http://localhost:8002/alert/')
 			.toPromise()
 			.then(response => response.json())
 			.catch(this.handleError);
 	}
 
 	getTheft(): any {
-		return this.http.get('http://192.168.43.89:8004/vol')
+		return this.http.get('http://localhost:8004/vol')
 			.toPromise()
 			.then(response => response.json())
 			.catch(this.handleError);
