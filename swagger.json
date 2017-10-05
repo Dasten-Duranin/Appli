@@ -1,0 +1,45 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Appli est la plateforme Angular permmettant le rendu graphique de chaque API.",
+    "version": "1.0.0",
+    "title": "Appli",
+    "contact": {
+      "email": "berthe.thomas01@gmail.com"
+    },
+    "license": {
+      "name": "leroux.tanguy.51@gmail.com souchu.laura@gmail.com"
+    }
+  },
+  "host": "localhost:4200",
+  "tags": [
+    {
+      "name": "Appli",
+      "description": "Rendu visuel de l'application"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "tags": [
+          "Appli"
+        ],
+        "summary": "Affiche les données des différentes APIs",
+        "description": "",
+        "operationId": "getAppli",
+        "produces": [
+          "application/html"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Opération réussie"
+          }
+        }
+      }
+    }
+  }
+}
